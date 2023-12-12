@@ -1,14 +1,14 @@
+/** @format */
 
-import './App.css'
+import './App.css';
+import DataList from './components/DataList';
 
 function App() {
-
-
-  return (
-    <>
-      
-    </>
-  )
+	return (
+		<>
+			<DataList />
+		</>
+	);
 }
 
-export default App
+export default App;
