@@ -6,7 +6,7 @@ function DataList() {
 	const result = useQuery({
 		queryKey: ['Posts'],
 		queryFn: async () => {
-			const data = await fetch('https://jsonplaceholder.typicode.com/posts');
+			const data = await fetch('http://127.0.0.1:8000/ads/advertises/');
 			return data.json();
 		},
 	});
