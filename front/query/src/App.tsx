@@ -13,10 +13,6 @@ function App() {
 					<DataList />
 					<DataList />
 					<DataList />
-					<DataList />
-					<DataList />
-					<DataList />
-					<DataList />
 				</>
 			)}
 			<span onClick={() => setFlag((flag) => !flag)}>changer</span>

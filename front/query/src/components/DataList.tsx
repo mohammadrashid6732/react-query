@@ -11,12 +11,9 @@ function DataList() {
 		},
 	});
 
-	console.log(result);
-	if (result.isPending) {
-		<h1>loading ....</h1>;
-	}
 	return (
 		<div>
+			<h1>{result.fetchStatus}</h1>
 			<ul>
 				{result.data?.map((e) => (
 					<li key={e.id}>{e.title}</li>
