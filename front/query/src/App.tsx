@@ -2,21 +2,19 @@
 
 import { useState } from 'react';
 import './App.css';
-import DataList from './components/DataList';
-
+import AdsContainer from './components/AdsContainer';
 function App() {
 	const [flag, setFlag] = useState(true);
 	return (
 		<>
 			{flag && (
 				<>
-					<DataList />
-					<DataList />
-					<DataList />
+					<AdsContainer />
 				</>
 			)}
-			<span onClick={() => setFlag((flag) => !flag)}>changer</span>
+			<button onClick={() => setFlag(!flag)}>change state</button>
 		</>
 	);
 }
+
 export default App;
