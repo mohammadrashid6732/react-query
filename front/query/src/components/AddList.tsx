@@ -3,10 +3,10 @@
 import { Adverties } from '../repo/repo';
 import AdsCard from './AdsCard';
 
-function AddList({ adsList }: { adsList: Adverties[]}) {
+function AddList({ addList }: { addList: Adverties[]}) {
 	return (
 		<div>
-			{adsList.map((a) => (
+			{addList.map((a) => (
 				<AdsCard key={a.id} ads={a} />
 			))}
 		</div>
